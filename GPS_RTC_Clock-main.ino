@@ -7,6 +7,7 @@
   https://github.com/hdrlux/GPS_RTC_Clock
 */
 
+#include <Arduino.h>  // needed for Nano Every
 #include "GPS_RTC_Clock.h"
 #include "LED_96x8_matrix.h"
 char TempBuf[5] = "99.9";  // demo value
