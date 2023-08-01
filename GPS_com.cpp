@@ -100,13 +100,11 @@ void GPS_read_seconds() {
   }
 }
 
-void GPS_ON() {
-  if (!gps_on) {  // only if NOT on
-    gps_on = true;
-    gps_seconds_t = 0;  // make shure GPS serial is alive before setting
-    pulse_count = 0;
-    Serial.println("GPS: ON");  // debug
-  }
+void GPS_ON() {  
+  gps_on = true;
+  gps_seconds_t = 0;  // make shure GPS serial is alive before setting
+  pulse_count = 0;
+  Serial.println("GPS: ON");  // debug  
 }
 
 void GPS_OFF() {
